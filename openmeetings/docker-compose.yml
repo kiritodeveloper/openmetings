@@ -1,0 +1,14 @@
+#docker-compose -f docker/dev/docker-compose.yml up
+version: '3'
+services:
+  blog:
+    image: fjudith/openmeetings
+    ports:
+        - 1935:1935 
+        - 5080:5080 
+        - 8081:8081 
+    volumes:
+        - ./path:/usr/local/bin
+       
+    
+   
